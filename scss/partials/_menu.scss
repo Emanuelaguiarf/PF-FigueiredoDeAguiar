@@ -1,0 +1,33 @@
+/* ---- MENU ---- */
+
+.menu_navegador {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #519067;
+    font-size: 0.8rem;
+
+    ul {
+        margin: 0.6rem;
+    }
+    
+    li {
+        display: inline;
+    
+        a {
+            color: white;
+            padding: 0.6rem;
+            text-decoration: none;
+        
+            &:hover {
+                background-color: #396749;   
+            }
+        }
+    }
+}
+
+.menu_photo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

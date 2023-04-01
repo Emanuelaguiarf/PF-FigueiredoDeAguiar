@@ -1,0 +1,125 @@
+/* ---- CONTACT US ---- */
+
+.contact_us_grid_template {
+    display: grid;
+    grid-template-rows: 480px 200px;
+    font-family:'Aleo', serif;
+}
+
+.contact_us_container {
+    margin: 2rem;
+    
+    h1 {
+        font-size: 3rem;
+        color: #396749;
+        font-family: 'Zen Loop', cursive;
+        text-decoration:underline;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+.form_container {
+    display: grid;
+    grid-template-rows: 10rem 8rem 3rem;
+}
+
+.form_name_email_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 5rem;
+}
+
+.form_button_container {
+    display: flex;
+    justify-self: end;
+}
+
+.form_button {
+    background-color: #296c82;
+    color: #e9edeb;
+    padding: .3rem;
+    border-radius: .3rem;
+    margin: .5rem;
+}
+
+.map_information_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our_information {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+
+    /* ---- CONTACT US ---- */ 
+
+    .contact_us_grid_template{
+    grid-template-rows: 500px 300px;
+    }
+
+    .contact_us_container {
+        h1 {
+            font-size: 5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .form_container {
+        grid-template-rows: 5rem 8rem 3rem;
+    }
+
+    .form_name_email_container {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem
+    }
+
+    .map_information_container {
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        margin: 0rem 3rem 0rem 3rem;
+    }
+
+    .our_information {
+        display:flex;
+        flex-direction: column;
+        
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width:1020px) {
+    /* ---- CONTACT US ----  */
+
+    .contact_us_container {
+        margin: 2rem 20rem;
+    }
+
+    .our_information {
+        display:flex;
+        flex-direction: column;
+        
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}

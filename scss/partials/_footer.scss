@@ -1,0 +1,34 @@
+/* ---- FOOTER ---- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer_socials {
+    display: flex;
+    padding: 0.5rem 4rem;
+    margin: 15px;
+    border-bottom: 3px solid #e57a44;
+    font-size: 1.5rem;
+
+    a {
+        color: #114b5f;
+        padding: 0.5rem;
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: #519067;
+    }  
+}
+
+.footer_text {
+    text-align: center;
+    font-family: "Aleo", serif;
+    font-size: 0.8rem;
+    color: #b47978;
+    margin: 5px 0px 25px 0px;
+}

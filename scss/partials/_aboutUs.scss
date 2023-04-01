@@ -1,0 +1,144 @@
+/* ---- ABOUSTUS ---- */
+
+.aboutUs_container {
+    display: grid;
+    grid-template-rows: 22rem 62rem 22rem;
+    grid-template-areas: 
+    "photo1"
+    "text_aboutUs"
+    "photo2";
+    font-family: 'Zen Loop', cursive;
+}
+
+.aboutUs_img1 {
+    grid-area: photo1;
+    width: 100%;
+    height: 20rem;
+}
+
+.aboutUs_text {
+    grid-area: text_aboutUs;
+}
+
+.aboutUs_img3 {
+    grid-area: photo2;
+    width: 100%;
+    height: 20rem;
+}
+
+.aboutUs_img2 {
+    display: none;
+} 
+
+.aboutUs_text {
+    grid-area: text_aboutUs;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        color: #519067;
+        text-decoration-line:underline;
+    }
+    
+    p {
+        font-size: 1rem;
+        text-align: justify;
+        margin: 0.2rem 2rem;
+    }
+}
+
+@media screen and (min-width:480px){
+
+    .aboutUs_container {
+        grid-template-rows: 32rem 65rem 30rem;
+    }
+
+    .aboutUs_img1, .aboutUs_img3 {
+        height: 30rem;
+    }
+
+    .aboutUs_text {
+        h1{
+            font-size: 2.5rem;
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (min-width:768px){
+    .aboutUs_container {
+        display: grid;
+        grid-template-rows: 22rem 50rem 22rem;
+        grid-template-areas: 
+        "photo1 text_aboutUs"
+        "photo1 text_aboutUs"
+        "photo2 text_aboutUs"
+        "photo2 text_aboutUs";
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+    .aboutUs_img1 {
+        width: 95%;
+        height: 40%;
+    }
+
+    .aboutUs_img2 {
+        display:flex;
+        width: 95%;
+        height: 40%;
+    }
+
+    .aboutUs_img3 {
+        display: none;
+    }
+
+    .img_container {
+        position: relative;
+        height: 102rem;
+        line-height:0
+    }
+    
+    .aboutUs_text {
+        position: relative;
+        margin: 0rem 2rem 3rem 1rem;
+    
+        h1 {
+            margin: 2rem;
+            text-align: center;
+            font-size: 3rem;
+        }
+        
+        p {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media screen and (min-width:1020px) {
+
+    .aboutUs_container {
+        grid-template-rows: 22rem 70rem 22rem;
+    }
+
+    .aboutUs_img1, .aboutUs_img2 {
+        height: 50%;
+    }
+
+    .aboutUs_text {
+    
+        h1 {
+            font-size: 5rem;
+        }
+        
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+}
